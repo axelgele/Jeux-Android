@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Projet_jeux</string>
+    <string name="text_rocket">Salluuuuuut</string>
+
+    <string-array name="nbVehicules">
+            <item name="4">4</item>
+            <item name="item2">5</item>
+            <item>6</item>
+            <item>7</item>
+            <item>8</item>
+            <item>9</item>
+            <item>85</item>
+            <item>500</item>
+            <item>La twingo a Sofiane</item>
+        </string-array>
+
+</resources>

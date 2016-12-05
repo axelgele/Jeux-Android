@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app2="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:background="#dddddd">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/title"
+
+        android:text="LE MEILLEUR JEUX DU MONDE" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Choisissez votre vehicule :"
+            style="@style/soustitre"/>
+
+        <ImageButton
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:id="@+id/button2"
+            app2:srcCompat="@drawable/bike"
+            android:backgroundTint="#B0C4DE"
+            android:saveEnabled="false"
+            android:contextClickable="false"
+            android:fadeScrollbars="false"
+            android:duplicateParentState="false"
+            android:cropToPadding="false" />
+
+        <ImageButton
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:id="@+id/button3"
+            app2:srcCompat="@drawable/car"
+            android:backgroundTint="#B0C4DE" />
+
+        <ImageButton
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:id="@+id/button4"
+            app2:srcCompat="@drawable/truck"
+            android:backgroundTint="#B0C4DE" />
+        <ImageButton
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:id="@+id/button5"
+            app2:srcCompat="@drawable/bicycleblack"
+            android:backgroundTint="#B0C4DE" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tunning de votre véhicule"
+            style="@style/soustitre"/>
+
+        <ImageButton
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:id="@+id/colorBlue"
+            android:backgroundTint="#3300FF" />
+
+        <ImageButton
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:id="@+id/colorRed"
+            android:backgroundTint="#FF0033" />
+
+        <ImageButton
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:id="@+id/colorYellow"
+            android:backgroundTint="#FFFF00" />
+
+        <ImageButton
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:id="@+id/colorBlack"
+            android:backgroundTint="#000000" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:text="Nombre de véhicule :"
+            style="@style/soustitre"/>
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:id="@+id/spinner"
+            android:entries="@array/nbVehicules"
+            android:spinnerMode="dropdown"
+            android:background="@android:drawable/spinner_background"
+            android:layout_marginTop="20dp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:text="C'est partit !"
+            android:layout_width="102dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/button6" />
+    </LinearLayout>
+
+
+</LinearLayout>
+
+
+
