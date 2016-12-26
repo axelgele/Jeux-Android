@@ -5,14 +5,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:weightSum="1"
-    android:background="#dddddd">
+    android:background="@drawable/back">
 
-    <TextView
+    <ImageView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        style="@style/title"
+        android:layout_height="130dp"
 
-        android:text="LE MEILLEUR JEUX DU MONDE" />
+        android:src="@drawable/logoa"
+        android:textColor="@android:color/black" />
 
     <LinearLayout
         android:orientation="horizontal"
@@ -23,79 +23,50 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Choisissez votre vehicule :"
+            android:text="Choisissez votre Intru :"
             style="@style/soustitre"/>
 
-        <ImageButton
-            android:layout_width="45dp"
+        <CheckBox
+            android:layout_width="36dp"
             android:layout_height="45dp"
             android:id="@+id/button2"
-            app2:srcCompat="@drawable/bike"
-            android:backgroundTint="#B0C4DE"
-            android:saveEnabled="false"
             android:contextClickable="false"
-            android:fadeScrollbars="false"
-            android:duplicateParentState="false"
-            android:cropToPadding="false" />
+            android:nestedScrollingEnabled="false" />
 
-        <ImageButton
-            android:layout_width="45dp"
+        <ImageView
             android:layout_height="45dp"
-            android:id="@+id/button3"
-            app2:srcCompat="@drawable/car"
-            android:backgroundTint="#B0C4DE" />
+            app2:srcCompat="@drawable/intruun"
+            android:id="@+id/imageView1"
+            android:layout_width="35dp" />
 
-        <ImageButton
+        <CheckBox
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:id="@+id/button3"
+        android:contextClickable="false"
+        android:nestedScrollingEnabled="false"
+        android:layout_weight="0.37" />
+
+        <ImageView
+            android:layout_width="38dp"
+            android:layout_height="45dp"
+            app2:srcCompat="@drawable/intrudeux"
+            android:id="@+id/imageView3" />
+
+        <CheckBox
             android:layout_width="45dp"
             android:layout_height="45dp"
             android:id="@+id/button4"
-            app2:srcCompat="@drawable/truck"
-            android:backgroundTint="#B0C4DE" />
-        <ImageButton
-            android:layout_width="45dp"
-            android:layout_height="45dp"
-            android:id="@+id/button5"
-            app2:srcCompat="@drawable/bicycleblack"
-            android:backgroundTint="#B0C4DE" />
+            android:contextClickable="false"
+            android:nestedScrollingEnabled="false"
+            android:layout_weight="0.37" />
 
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:orientation="horizontal"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:weightSum="1">
-
-        <TextView
+        <ImageView
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Tunning de votre véhicule"
-            style="@style/soustitre"/>
-
-        <ImageButton
-            android:layout_width="45dp"
             android:layout_height="45dp"
-            android:id="@+id/colorBlue"
-            android:backgroundTint="#3300FF" />
-
-        <ImageButton
-            android:layout_width="45dp"
-            android:layout_height="45dp"
-            android:id="@+id/colorRed"
-            android:backgroundTint="#FF0033" />
-
-        <ImageButton
-            android:layout_width="45dp"
-            android:layout_height="45dp"
-            android:id="@+id/colorYellow"
-            android:backgroundTint="#FFFF00" />
-
-        <ImageButton
-            android:layout_width="45dp"
-            android:layout_height="45dp"
-            android:id="@+id/colorBlack"
-            android:backgroundTint="#000000" />
+            app2:srcCompat="@drawable/intrutrois"
+            android:id="@+id/imageView"
+            android:layout_weight="0.36" />
 
 
     </LinearLayout>
@@ -109,7 +80,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="45dp"
-            android:text="Nombre de véhicule :"
+            android:text="Nombre d'objets :"
             style="@style/soustitre"/>
 
         <Spinner

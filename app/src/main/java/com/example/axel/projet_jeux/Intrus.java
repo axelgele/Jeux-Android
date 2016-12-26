@@ -39,8 +39,8 @@ public class Intrus {
         this.mObjet=object;
         this.mxMax=xM;
         this.myMax=yM;
-        this.mxSpeed = 7;
-        this.mySpeed = 1;
+        this.mxSpeed = xSpeed + 8;
+        this.mySpeed = ySpeed + 8;
 
         init();
     }
@@ -48,26 +48,23 @@ public class Intrus {
     public void  init(){
         rdm = new Random();
 
-        x = 1;
-        y = 5;
+        x = rdm.nextInt(mxMax - 0)+1;
+        y = rdm.nextInt(myMax - 0)+1;
     }
 
     public void update() { // PAs a moi
+
         x += mxSpeed;
         y += mySpeed;
 
-        if (x < 0 && y <0) {
-            x = mObjet.getWidth()/2;
-            y = mObjet.getHeight()/2;
-        } else {
-            x +=  mxSpeed + (mxSpeed * (mySpeed / 100.0));
-            y +=  mySpeed + (mySpeed * (mySpeed / 100.0));
-            if ((x > mxMax - mObjet.getWidth()) || (x < 0)) {
-                mxSpeed = mxSpeed*-1;
-            }
-            if ((y > myMax - mObjet.getHeight()) || (y < 0)) {
-                mySpeed = mySpeed*-1;
-            }
+        //Faire une layout et lui dire de pas depasser les bords de cette layout
+
+        if (x > mxMax-mObjet.getWidth() || x < 0) {
+            mxSpeed = mxSpeed*-1;
+            //number.changeText();}
+        }
+        if (y > myMax-mObjet.getHeight() || y < 0) {
+            mySpeed = mySpeed*-1;
         }
 
     }

@@ -3,15 +3,13 @@
     <string name="text_rocket">Salluuuuuut</string>
 
     <string-array name="nbVehicules">
-            <item name="4">4</item>
-            <item name="item2">5</item>
-            <item>6</item>
-            <item>7</item>
-            <item>8</item>
-            <item>9</item>
+            <item name="4">8</item>
+            <item name="item2">12</item>
+            <item>18</item>
+            <item>20</item>
+            <item>30</item>
             <item>85</item>
-            <item>500</item>
-            <item>La twingo a Sofiane</item>
+
         </string-array>
 
 </resources>

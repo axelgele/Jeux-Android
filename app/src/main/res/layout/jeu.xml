@@ -7,15 +7,10 @@
     android:id="@+id/viewwin"
     android:background="#E1F5F2">
 
-    <TextView
-        android:text=""
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/win" />
-
     <com.example.axel.projet_jeux.CustomView
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-        android:id="@+id/ViewJeu"/>
+        android:id="@+id/ViewJeu"
+        android:background="@drawable/back" />
 
 </LinearLayout>

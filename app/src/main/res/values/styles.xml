@@ -20,7 +20,7 @@
 
     <style name="soustitre">
 
-        <item name="android:layout_margin">20dp</item>
+        <item name="android:layout_margin" >20dp</item>
         <item name="android:gravity">left</item>
         <item name="android:textSize">12sp</item>
         <item name="android:textColor">@color/colorPrimaryDark</item>

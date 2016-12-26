@@ -17,7 +17,5 @@ public class AActivity extends AppCompatActivity{
         super.onCreate(savedInstanceState);
         setContentView((R.layout.jeu));
 
-        TextView text = (TextView) findViewById(R.id.win);
-        text.setHint("Win");
     }
 }
