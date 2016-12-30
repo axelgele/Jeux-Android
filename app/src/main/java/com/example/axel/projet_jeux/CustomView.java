@@ -203,7 +203,7 @@ public class CustomView extends View implements View.OnTouchListener {
                                son.start();
                                new AlertDialog.Builder(activity)
                                .setCancelable(false)
-                                       .setTitle("Send nudes")
+                                       .setTitle("C'est gagné !!!")
                                        .setMessage("T'a plié le game !")
                                        .setIcon(R.drawable.win)
                                        .setPositiveButton("Rejouer", new DialogInterface.OnClickListener() {
