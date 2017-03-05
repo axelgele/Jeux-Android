@@ -2,7 +2,7 @@
   <content>
 # Projet jeux Android
 Mini jeu, développé  en Java.
-## License
+## Licence
 Axel GELE
 ></content>
 </snippet>
